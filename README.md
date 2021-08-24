@@ -4,9 +4,9 @@ Scaffolding for a dapp built on Solana
 # Quickstart
 
 ```bash
-git clone https://github.com/solana-labs/dapp-scaffold.git
+git clone https://github.com/Aparna-Bindhu/solana-ride-sharing.git
 
-cd dapp-scaffold
+cd solana-ride-sharing
 ```
 
 ```bash
