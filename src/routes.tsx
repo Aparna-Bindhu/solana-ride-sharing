@@ -8,7 +8,7 @@ import { WalletProvider } from "@solana/wallet-adapter-react";
 
 // import { FaucetView, HomeView } from "./views";
 
-import {HelloWorld} from "./components/HelloWorld"
+import {HomePage} from "./components/home/HomePage";
 import {
   getLedgerWallet,
   getMathWallet,
@@ -41,7 +41,7 @@ export function Routes() {
 
               <BrowserRouter>
                 <Switch>
-                  <Route exact path="/" component={HelloWorld} />
+                  <Route exact path="/" component={HomePage} />
                 </Switch>
               </BrowserRouter>
   );

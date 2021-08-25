@@ -1,0 +1,98 @@
+body{
+    height: 100%;
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    background-size: cover;
+}
+
+.home-main-col{
+    margin: 9% 0 0 0;
+    background-color: rgb(26, 24, 24);
+    border-radius: 12px;
+}
+
+.home-content-row{
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 12px;
+  box-shadow: -5px 10px 5px 0  rgba(14, 13, 13, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.app-content{
+    background: url(../../img/car-sharing.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.sub-app-content{
+    text-align: center;
+    padding: 20% 0 18% 0;
+    height: 100%;
+    background-color: #000;
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 12px;
+    opacity: 0.7;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-form{
+    margin: 15% 10% 5% 10%;
+    padding: 10% 8% 10% 8%;
+    -moz-box-shadow:    8px 8px 5px 0px rgb(19, 17, 17);
+    -webkit-box-shadow: 8px 8px 5px 0px rgb(19, 17, 17);
+    box-shadow:         8px 8px 5px 0px rgb(19, 17, 17);
+}
+
+
+.login-form-button{
+    display: block;
+    margin-bottom: 5%;
+}
+
+.register-now-link a{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(22, 255, 1);
+}
+
+.register-now-link a:hover{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 204, 255);
+}
+@media only screen and (max-width: 766px) {
+    body{
+        height: 100%;
+        background-color: #0cbaba;
+        background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+        background-size: cover;
+    }
+    
+    .sub-app-content{
+        text-align: center;
+        margin: 3% 5% 0 5%;
+        padding: 5% 0 5% 0;
+        background-color:none;
+        opacity: none;
+    }
+    .login-form{
+        margin: 8% 20% 8% 20%;
+        border: 1px solid #888;
+        border-radius: 12px;
+        padding: 8% 5% 2% 5%;
+        border-radius: 12px;
+        background-color: #000;
+    }
+    .home-main-col{
+        margin: 2% 0 0 0;
+        background-color: transparent;
+    }
+    .app-content{
+        background-image: none;
+    }
+    .home-content-row{
+        border: none;
+    }
+  }
+
