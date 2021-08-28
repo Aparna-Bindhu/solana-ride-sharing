@@ -7,8 +7,8 @@ import { WalletProvider } from "@solana/wallet-adapter-react";
 // import { AppLayout } from "./components/Layout";
 
 // import { FaucetView, HomeView } from "./views";
-
 import {HomePage} from "./components/home/HomePage";
+import {RideTakerOrGiver} from "./components/innerContent/RideTakerOrGiver"
 import {
   getLedgerWallet,
   getMathWallet,
@@ -42,6 +42,9 @@ export function Routes() {
               <BrowserRouter>
                 <Switch>
                   <Route exact path="/" component={HomePage} />
+                  <Route exact path="/ridetakerorgiver" component={RideTakerOrGiver} />
+                  {/* <Route exact path="/ridetaker/dashboard" component={RideTakerOrGiver} />
+                  <Route exact path="/rideGiver/dashboard" component={RideTakerOrGiver} /> */}
                 </Switch>
               </BrowserRouter>
   );

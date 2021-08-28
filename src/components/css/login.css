@@ -1,6 +1,5 @@
 body{
     height: 100%;
-    background-color: #0cbaba;
     background-image: url(../../img/bgimage.jpg);
     background-size: cover;
 }
@@ -97,20 +96,23 @@ body{
             -moz-appearance: textfield;
         }
 
+.logo-ride-share-img{
+ width: 80%;
+}
+
 @media only screen and (max-width: 766px) {
-    body{
+    /* body{
         height: 100%;
         background-color: #0cbaba;
-        background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
         background-size: cover;
-    }
+    } */
     
     .sub-app-content{
         text-align: center;
         margin: 3% 5% 0 5%;
         padding: 5% 0 5% 0;
         background-color:none;
-        opacity: none;
+        opacity: 1;
     }
     .login-form{
         margin: 8% 20% 8% 20%;
@@ -130,5 +132,9 @@ body{
     .home-content-row{
         border: none;
     }
+
+    .logo-ride-share-img{
+        width: 30%;
+       }
   }
 

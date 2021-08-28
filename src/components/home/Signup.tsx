@@ -15,7 +15,7 @@ export const Signup = () => {
             name="name"
             rules={[{ required: true, message: 'Please input your Name!' }]}
           >
-            <Input prefix={<UserOutlined className="site-form-item-icon" />} type="text" placeholder="FullName" />
+            <Input prefix={<UserOutlined className="site-form-item-icon" />} type="text" placeholder="FullName" defaultValue="Admin Admin"/>
           </Form.Item>
           <Form.Item
             name="emailid"
@@ -24,6 +24,7 @@ export const Signup = () => {
             <Input
               prefix={<MailOutlined className="site-form-item-icon"  />}
             type="email" placeholder="Email for communication"
+            defaultValue="admin@rideshare.com"
             />
           </Form.Item>
           <Form.Item
@@ -32,7 +33,8 @@ export const Signup = () => {
           >
             <Input id="phonenumber"
               prefix={<PhoneOutlined className="site-form-item-icon" />}
-            type="number" placeholder="Phone Number"/>
+            type="number" placeholder="Phone Number"
+            defaultValue="8000233788"/>
           </Form.Item>
           <Form.Item
             name="gender"
@@ -48,10 +50,11 @@ export const Signup = () => {
           >
             <Input
               prefix={<LockOutlined className="site-form-item-icon" />}
-            type="password" placeholder="create password"/>
+            type="password" placeholder="create password"
+            defaultValue="defaultValue"/>
           </Form.Item>
           <Form.Item>
-            <Button type="primary" htmlType="submit" className="login-form-button" block>
+            <Button type="primary" htmlType="submit" className="login-form-button" block href="/">
               Sign Up
             </Button>
           </Form.Item>

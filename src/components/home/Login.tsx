@@ -14,7 +14,7 @@ export const Login = () => {
             name="username"
             rules={[{ required: true, message: 'Please input your Username!' }]}
           >
-            <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
+            <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Email Address" defaultValue="admin@rideshare.com"/>
           </Form.Item>
           <Form.Item
             name="password"
@@ -24,10 +24,11 @@ export const Login = () => {
               prefix={<LockOutlined className="site-form-item-icon" />}
               type="password"
               placeholder="Password"
+              defaultValue="defaultvalue"
             />
           </Form.Item>
           <Form.Item>
-            <Button type="primary" htmlType="submit" className="login-form-button" block>
+            <Button type="primary" htmlType="submit" className="login-form-button" block href="/riderakerorgiver">
               Log in
             </Button>
             <a className="login-form-forgot" href="">

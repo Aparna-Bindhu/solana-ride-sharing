@@ -1,0 +1,75 @@
+h2{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.pledge_block{
+    background-color:rgb(255, 255, 255,0.2);
+    box-shadow: -10px 15px 10px 0  rgba(14, 14, 14, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 8% 10% 0 10%;
+    padding: 8% 5% 5% 5%;
+}
+
+.pledge_content_block{
+    box-shadow: -10px 15px 10px 0  rgba(14, 14, 14, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1%;
+    margin-bottom: 2%;
+    border-radius: 12px;
+}
+
+.pledge_content_block h3{
+    font-weight: bold;
+}
+
+.respect_content{
+    display: inline-block;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#respect_content{
+    padding-left: 10%;
+}
+
+.ridetakergiver{
+    background-color:rgba(226, 222, 222, 0.1);
+    box-shadow: -10px 15px 10px 0  rgba(14, 14, 14, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 13% 10% 0 10%;
+    padding: 8% 5% 5% 5%;
+}
+
+.stylecenter{
+    text-align: center;
+}
+
+.ride{
+    display: block;
+}
+
+.ride_content{
+    display: inline-block;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 15%;
+}
+
+.vehicle_selection{
+    margin-left: 20%;
+}
+
+.vehicle_content_block{
+    box-shadow: -10px 15px 10px 0  rgba(14, 14, 14, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:rgb(211, 209, 209);
+    padding: 5%;
+    margin-bottom: 10%;
+    border-radius: 12px;
+}
+
+.car_details_giver input{
+    border: none;
+    outline: none;
+ border-bottom: 1px solid rgb(0, 0, 0);
+ margin-top: 2%;
+}
+

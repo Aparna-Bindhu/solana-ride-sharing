@@ -9,7 +9,6 @@ import { useState } from 'react';
 import logo from '../../img/car.png';
 
 export const HomePage = () => {
-
   const [signUpLink, setSignUpLink] = useState(false);
 
   function SignUpLink() {
@@ -24,7 +23,7 @@ export const HomePage = () => {
       <Row>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 5 }}>
           <div>
-            <img className="logo-ride-share-img" src={logo} width={200} height={150} />
+            <img className="logo-ride-share-img" src={logo} />
           </div>
         </Col>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 14 }} className="home-main-col">
@@ -42,7 +41,7 @@ export const HomePage = () => {
                   </Form.Item>
                   :
                   <Form.Item className="register-now-link">
-                    Already register? <a onClick={LoginLink}>Login!</a>
+                    Already registered? <a onClick={LoginLink}>Login!</a>
                   </Form.Item>
                 }
                 <div id="social-media-align-single">
