@@ -1,5 +1,5 @@
 import {Form, Input, Button, Checkbox } from 'antd';
-import { UserOutlined, LockOutlined, MailOutlined, PhoneOutlined } from '@ant-design/icons';
+import { UserOutlined, LockOutlined, MailOutlined, PhoneOutlined,WalletOutlined } from '@ant-design/icons';
 import React, { useEffect } from "react";
 import "../css/login.css";
 // import { Label } from '@material-ui/icons';
@@ -35,6 +35,15 @@ export const Signup = () => {
               prefix={<PhoneOutlined className="site-form-item-icon" />}
             type="number" placeholder="Phone Number"
             defaultValue="8000233788"/>
+          </Form.Item>
+          <Form.Item
+            name="walletid"
+            rules={[{ required: true, message: 'Please input your wallet account number' }]}
+          >
+            <Input
+              prefix={<WalletOutlined className="site-form-item-icon" />}
+            type="number" placeholder="Wallet Account Number"
+            defaultValue="c5dbsye4jhbbjfhu76dsytuwerghjdtr"/>
           </Form.Item>
           <Form.Item
             name="gender"

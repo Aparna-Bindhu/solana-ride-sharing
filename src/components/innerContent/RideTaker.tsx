@@ -49,7 +49,7 @@ export const RideTaker = () => {
     }
 
     const handleOk = () => {
-            window.location.href = "/riderakerorgiver";
+            window.location.href = "/ridetaker/dashboard";
     };
 
     return (

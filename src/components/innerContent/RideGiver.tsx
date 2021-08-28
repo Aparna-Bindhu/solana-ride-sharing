@@ -47,7 +47,7 @@ export const RideGiver = () => {
     }
 
     const handleOk = () => {
-        window.location.href = "/riderakerorgiver";
+        window.location.href = "/rideGiver/dashboard";
 };
 
     return (

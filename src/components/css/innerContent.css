@@ -73,3 +73,26 @@ h2{
  margin-top: 2%;
 }
 
+.rideGiverList table{
+    width: 96%;
+    margin:2%;
+}
+
+.rideGiverList th,td{
+    padding: 2% 1% 1% 1%;
+    text-align: center;
+}
+
+.rideGiverList td a:hover{
+    border-bottom: 1px solid rgb(1, 204, 255);
+    border-top: 1px solid rgb(1, 204, 255);
+}
+
+.rideGiverList .giverrequest{
+    box-shadow: -10px 15px 10px 0  rgba(14, 14, 14, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:rgba(26, 23, 23, 0.3);
+    
+}
+
+
+
