@@ -32,7 +32,7 @@ export const RideTakerDashboard = () => {
                                 <th>RIDE GIVER</th>
                                 <th>GENDER</th>
                                 <th>VEHICLE NAME</th>
-                                <th>AVAILABLE SEATS</th>
+                                <th>NO: OF SEAT WANTED</th>
                                 <th>AMOUNT</th>
                             </tr>
                             {
@@ -45,7 +45,7 @@ export const RideTakerDashboard = () => {
                                         <td>{rideGiver.Vehicle}</td>
                                         <td>{rideGiver.AvailableSeats}</td>
                                         <td>{rideGiver.Amount}</td>
-                                        <td><a onClick={() => requestForRideGiver(rideGiver.id)}>Request</a></td>
+                                        <td><Button type="primary" onClick={() => requestForRideGiver(rideGiver.id)}>Request</Button></td>
                                     </tr>
                                 ))}
 

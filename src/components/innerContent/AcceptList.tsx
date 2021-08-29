@@ -1,17 +1,18 @@
 import { Row, Col, Form, Input, Button, Radio, DatePicker, Modal, InputNumber } from 'antd';
-import { UserOutlined, LockOutlined, FacebookOutlined, InstagramOutlined, GoogleOutlined } from '@ant-design/icons';
+import { CheckOutlined, DeleteOutlined } from '@ant-design/icons';
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/innerContent.css";
 
-export const RideGiverDashboard = () => {
+export const AcceptList = () => {
 
     const [rideGiversList, setRideGiversList] = useState([
-        { id:1, RideGiver: "Akhil", Vehicle: "Polo", AvailableSeats: "2", Amount: 10000000, StartDes: "Kollam" , DropDes: "Trivandrum" },
-        { id:2, RideGiver: "Anoop", Vehicle: "Alto", AvailableSeats: "3", Amount: 10000000, StartDes: "Trivandrum" , DropDes: "Kollam" },
-        { id:3, RideGiver: "Abhijith", Vehicle: "Inova", AvailableSeats: "2", Amount: 10000000, StartDes: "Kollam", DropDes: "Trivandrum"  },
-        { id:4, RideGiver: "Geethu", Vehicle: "Polo", AvailableSeats: "1", Amount: 10000000, StartDes: "Trivandrum", DropDes: "Kollam"  },
-        { id:5, RideGiver: "Rani", Vehicle: "Alto", AvailableSeats: "2", Amount: 10000000, StartDes: "Kollam" , DropDes: "Trivandrum" }])
+        { id:1, RideGiver: "Akhil", Vehicle: "Polo", AvailableSeats: "2", Amount: 10000000, Gender: "Male" },
+        { id:2, RideGiver: "Anoop", Vehicle: "Alto", AvailableSeats: "3", Amount: 10000000, Gender: "Male" },
+        { id:3, RideGiver: "Abhijith", Vehicle: "Inova", AvailableSeats: "2", Amount: 10000000, Gender: "Male" },
+        { id:4, RideGiver: "Geethu", Vehicle: "Polo", AvailableSeats: "1", Amount: 10000000, Gender: "Female" },
+        { id:5, RideGiver: "Rani", Vehicle: "Alto", AvailableSeats: "2", Amount: 10000000, Gender: "Female" },
+        { id:6, RideGiver: "Raj", Vehicle: "Toyato", AvailableSeats: "3", Amount: 10000000, Gender: "Male" }])
 
     function requestForRideGiver(id:Number) {
         alert(`hello, ${id}`);
@@ -26,10 +27,9 @@ export const RideGiverDashboard = () => {
                             <tr>
                                 <th>SL.NO</th>
                                 <th>RIDE GIVER</th>
+                                <th>GENDER</th>
                                 <th>VEHICLE NAME</th>
                                 <th>AVAILABLE SEATS</th>
-                                <th>From</th>
-                                <th>To</th>
                                 <th>AMOUNT</th>
                             </tr>
                             {
@@ -38,11 +38,12 @@ export const RideGiverDashboard = () => {
                                     <tr className="giverrequest">
                                         <td key={rideGiver.id}>{index + 1}</td>
                                         <td>{rideGiver.RideGiver}</td>
+                                        <td>{rideGiver.Gender}</td>
                                         <td>{rideGiver.Vehicle}</td>
                                         <td>{rideGiver.AvailableSeats}</td>
-                                        <td>{rideGiver.StartDes}</td>
-                                        <td>{rideGiver.DropDes}</td>
                                         <td>{rideGiver.Amount}</td>
+                                        <td><Button type="primary" onClick={() => requestForRideGiver(rideGiver.id)}><CheckOutlined /></Button></td>
+                                        <td><Button danger type="text" onClick={() => requestForRideGiver(rideGiver.id)}><DeleteOutlined style={{ fontSize: '20px'}} /></Button></td>
                                     </tr>
                                 ))}
 

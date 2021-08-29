@@ -11,6 +11,9 @@ import {HomePage} from "./components/home/HomePage";
 import {RideTakerOrGiver} from "./components/innerContent/RideTakerOrGiver"
 import {RideTakerDashboard} from "./components/innerContent/RideTakerDashboard"
 import {RideGiverDashboard} from "./components/innerContent/RideGiverDashboard"
+import {RequestList} from "./components/innerContent/RequestList"
+import {AcceptList} from "./components/innerContent/AcceptList"
+import {Sender} from "./components/payment/Sender"
 import {
   getLedgerWallet,
   getMathWallet,
@@ -45,8 +48,11 @@ export function Routes() {
                 <Switch>
                   <Route exact path="/" component={HomePage} />
                   <Route exact path="/ridetakerorgiver" component={RideTakerOrGiver} />
-                  <Route exact path="/ridetaker/dashboard" component={RideTakerDashboard} />
-                  <Route exact path="/rideGiver/dashboard" component={RideGiverDashboard} />
+                  <Route exact path="/ridetaker" component={RideTakerDashboard} />
+                  <Route exact path="/rideGiver" component={RideGiverDashboard} />
+                  <Route exact path="/requestlist" component={RequestList} />
+                  <Route exact path="/acceptlist" component={AcceptList} />
+                  <Route exact path="/payment" component={Sender} />
                 </Switch>
               </BrowserRouter>
   );

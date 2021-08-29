@@ -39,6 +39,15 @@ export const RideTakerOrGiver = () => {
   return (
     <>
       <Row className="ridetakergiverbg">
+        <Row>
+          <Col xs={24} md={24}>
+            <ul className="unorderedliststyle">
+              <li><a href="/requestlist">Ride Giver Accept List</a></li>
+              <li><a href="/acceptlist" >Ride Taker Request List</a></li>
+              <li><a href="/acceptlist" >Transactions</a></li>
+            </ul>
+          </Col>
+        </Row>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }}>
           <div className="pledge_block">
             <h2>QUICK RIDER'S PLEDGE</h2>
@@ -71,9 +80,9 @@ export const RideTakerOrGiver = () => {
                 <p>Grow the community and spread goodness.</p>
               </div>
             </div>
-              <Button type="primary" htmlType="submit" className="login-form-button" disabled={iAgreeDisable} block onClick={showRideGiverOrTakerBlock}>
-                I Agree
-              </Button>
+            <Button type="primary" htmlType="submit" className="login-form-button" disabled={iAgreeDisable} block onClick={showRideGiverOrTakerBlock}>
+              I Agree
+            </Button>
           </div>
         </Col>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }}>

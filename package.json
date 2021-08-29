@@ -49,8 +49,7 @@
     "react": "^17.0.2",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
-    "typescript": "^4.0.0"
+    "react-scripts": "3.4.3"
   },
   "devDependencies": {
     "@types/bn.js": "^4.11.6",
@@ -59,9 +58,12 @@
     "@types/node": "^12.12.62",
     "@types/react": "^16.9.50",
     "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
     "arweave-deploy": "^1.9.1",
     "gh-pages": "^3.1.0",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "typescript": "^4.4.2"
   },
   "eslintConfig": {
     "extends": "react-app"

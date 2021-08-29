@@ -49,13 +49,13 @@ export const RideTaker = () => {
     }
 
     const handleOk = () => {
-            window.location.href = "/ridetaker/dashboard";
+            window.location.href = "/ridetaker";
     };
 
     return (
         <>
             <div className="pledge_block">
-                <h2>Ride Giver</h2>
+                <h2>Ride Taker</h2>
                 <Form
                     name="normal_login"
                     className="car_details_giver"

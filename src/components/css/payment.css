@@ -1,0 +1,14 @@
+#verifyamounth2{
+    margin-top: 28%;
+}
+
+.payment-form{
+    box-shadow: -10px 15px 10px 0  rgba(14, 14, 14, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:rgba(26, 23, 23, 0.6);
+    margin: 5% 10% 10% 10%;
+}
+
+.payment-form .inputstyle{
+    border: none;
+    text-align: center;
+}
