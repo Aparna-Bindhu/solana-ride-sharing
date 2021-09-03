@@ -6,7 +6,7 @@ import "../css/login.css";
 import { Login } from './Login';
 import { Signup } from './Signup';
 import { useState } from 'react';
-import logo from '../../img/car.png';
+import logo from '../../img/ride.png';
 
 export const HomePage = () => {
   const [signUpLink, setSignUpLink] = useState(false);
@@ -15,34 +15,38 @@ export const HomePage = () => {
     setSignUpLink(true);
   }
 
-  function LoginLink(){
+  function LoginLink() {
     setSignUpLink(false);
   }
   return (
     <>
       <Row>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 5 }}>
-          <div>
-            <img className="logo-ride-share-img" src={logo} />
+          <div className="logo-ride-share-img">
+            <img src={logo} />
           </div>
         </Col>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 14 }} className="home-main-col">
           <Row className="home-content-row">
             <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} className="app-content">
               <div className="sub-app-content">
-                <h1>Lorem Ipsum</h1>
-                <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen
-                  book.</p>
                 {!signUpLink ?
-                  <Form.Item className="register-now-link">
-                    <a onClick={SignUpLink}>Signup now!</a>
-                  </Form.Item>
+                  <>
+                    <h1>DRIVE</h1>
+                    <p><b>DRIVE</b> to get a ride or share a ride.
+                      <br />If you are not registered yet, please click the below link.</p>
+                    <Form.Item className="register-now-link">
+                      <a onClick={SignUpLink}>Register now!</a>
+                    </Form.Item>
+                  </>
                   :
-                  <Form.Item className="register-now-link">
-                    Already registered? <a onClick={LoginLink}>Login!</a>
-                  </Form.Item>
+                  <>
+                    <h1>DRIVE</h1>
+                    <p><b>DRIVE</b> to get a ride or share a ride.</p>
+                    <Form.Item className="register-now-link">
+                      Already registered? <a onClick={LoginLink}>Login!</a>
+                    </Form.Item>
+                  </>
                 }
                 <div id="social-media-align-single">
                   <a href="" ><FacebookOutlined className="social-media-icon" /></a> <a href="" ><InstagramOutlined className="social-media-icon" /></a> <a href="" ><GoogleOutlined className="social-media-icon" /></a>

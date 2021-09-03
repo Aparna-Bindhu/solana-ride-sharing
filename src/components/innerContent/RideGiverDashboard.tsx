@@ -21,7 +21,8 @@ export const RideGiverDashboard = () => {
         <>
             <Row>
                 <Col xs={24} md={24}>
-                    <div className="rideGiverList">
+                    <div className="rideGiverList"><br/>
+                        <h2>Ride list provided by you.</h2>
                         <table>
                             <tr>
                                 <th>SL.NO</th>

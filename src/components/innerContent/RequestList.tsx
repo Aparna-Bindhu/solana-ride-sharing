@@ -38,7 +38,8 @@ export const RequestList = () => {
         <>
             <Row>
                 <Col xs={24} md={24}>
-                    <div className="rideGiverList">
+                    <div className="rideGiverList"><br/>
+                        <h2>Proceed payment when payment button get enabled.</h2>
                         <table>
                             <tr>
                                 <th>SL.NO</th>

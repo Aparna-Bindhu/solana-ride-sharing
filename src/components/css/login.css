@@ -37,8 +37,8 @@ body{
 }
 
 .login-form{
-    margin: 15% 10% 5% 10%;
-    padding: 10% 5% 10% 8%;
+    margin: 10% 10% 5% 10%;
+    padding: 5% 5% 5% 8%;
     -moz-box-shadow:    8px 8px 5px 0px rgb(19, 17, 17);
     -webkit-box-shadow: 8px 8px 5px 0px rgb(19, 17, 17);
     box-shadow:         8px 8px 5px 0px rgb(19, 17, 17);
@@ -97,9 +97,10 @@ body{
             -moz-appearance: textfield;
         }
 
-.logo-ride-share-img{
- width: 80%;
+.logo-ride-share-img img{
+ width: 30%;
 }
+
 
 @media only screen and (max-width: 766px) {
     /* body{

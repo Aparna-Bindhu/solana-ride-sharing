@@ -7,6 +7,7 @@ import shakehand from '../../img/shakehand.png';
 import leafhand from '../../img/leafhand.png';
 import goodness from '../../img/goodness.png';
 import ridetaker from '../../img/ridetaker.svg';
+import ridegiver from '../../img/ridegiver.svg';
 import { RideGiver } from './RideGiver';
 import { RideTaker } from './RideTaker';
 
@@ -56,6 +57,7 @@ export const RideTakerOrGiver = (props:any) => {
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }}>
           <div className="pledge_block">
             <h2>QUICK RIDER'S PLEDGE</h2>
+            <p>Agree to be either Ride Taker / Ride Giver.</p>
             <div className="pledge_content_block">
               <div className="respect_content">
                 <img src={shakehand} width={70} />
@@ -113,7 +115,7 @@ export const RideTakerOrGiver = (props:any) => {
                       <p>Share seats.</p>
                     </div>
                     <div className="ride_content">
-                      <img src={ridetaker} width={120} />
+                      <img src={ridegiver} width={130} />
                     </div>
                     <Button type="primary" value="a" className="ride" block onClick={setRideGiver}>
                       Ride Giver

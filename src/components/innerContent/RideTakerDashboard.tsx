@@ -13,9 +13,7 @@ export const RideTakerDashboard = () => {
         { id:4, RideGiver: "Geethu", Vehicle: "Polo", AvailableSeats: "1", Amount: 10000000, Gender: "Female" },
         { id:5, RideGiver: "Rani", Vehicle: "Alto", AvailableSeats: "2", Amount: 10000000, Gender: "Female" },
         { id:6, RideGiver: "Raj", Vehicle: "Toyato", AvailableSeats: "3", Amount: 10000000, Gender: "Male" },
-        { id:7, RideGiver: "Athul", Vehicle: "Toyato", AvailableSeats: "2", Amount: 10000000, Gender: "Male" },
-        { id:8, RideGiver: "Nithun", Vehicle: "Zen", AvailableSeats: "1", Amount: 10000000, Gender: "Male" },
-        { id:9, RideGiver: "Lekshmi", Vehicle: "Polo", AvailableSeats: "2", Amount: 10000000, Gender: "Female" }])
+        { id:7, RideGiver: "Athul", Vehicle: "Toyato", AvailableSeats: "2", Amount: 10000000, Gender: "Male" }])
 
     function requestForRideGiver(id:Number) {
         alert(`hello, ${id}`);
@@ -25,7 +23,8 @@ export const RideTakerDashboard = () => {
         <>
             <Row>
                 <Col xs={24} md={24}>
-                    <div className="rideGiverList">
+                    <div className="rideGiverList"><br/>
+                        <h2>List that matches your need - Request for a ride.</h2>
                         <table>
                             <tr>
                                 <th>SL.NO</th>
