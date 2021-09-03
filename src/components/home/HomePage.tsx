@@ -32,8 +32,8 @@ export const HomePage = () => {
               <div className="sub-app-content">
                 {!signUpLink ?
                   <>
-                    <h1>DRIVE</h1>
-                    <p><b>DRIVE</b> to get a ride or share a ride.
+                    <span id="letsgo">LetsGo</span>
+                    <p><b>LetsGo</b> to get a ride or share a ride.
                       <br />If you are not registered yet, please click the below link.</p>
                     <Form.Item className="register-now-link">
                       <a onClick={SignUpLink}>Register now!</a>
@@ -41,8 +41,8 @@ export const HomePage = () => {
                   </>
                   :
                   <>
-                    <h1>DRIVE</h1>
-                    <p><b>DRIVE</b> to get a ride or share a ride.</p>
+                    <h1>Letsgo</h1>
+                    <p><b>Letsgo</b> to get a ride or share a ride.</p>
                     <Form.Item className="register-now-link">
                       Already registered? <a onClick={LoginLink}>Login!</a>
                     </Form.Item>
