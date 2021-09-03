@@ -2,13 +2,23 @@ Working of our project 'LetsGo'.
 
 Due to some issues in storing data and retrieving it, we make use of static data's.
 
-1. Login Page:
-
-
+1. Login Page
    Login with credentials(username and password) link:  http://localhost:3000/
+   
+   git clone 'https://github.com/Aparna-Bindhu/solana-ride-sharing.git'
+   cd foldername
+   code .(To open in Visual Studio Code)
+   Project terminal - npm install
+   npm start
 
 2. Entering into Ride Taker or Ride Giver selection page. Before that you have agree a QUICK RIDER'S PLEDGE.
    Then you can see two option whether you need to take a ride or give a ride. http://localhost:3001/ridetakerorgiver (only work when you login)
+   
+   credentials
+   ------------------------------
+   Ride Taker: username: ridetaker@admin.com  password: ridetaker
+   Ride Giver: username: ridegiver@admin.com  password: ridegiver
+   Both      : username: admin@admin.com      password: admin
 
 3. If you are a Ride Taker : click Ride Taker button, then you have input some information's like 
                                                       (a) Whether you need a 4 wheeler or 2 wheeler.
