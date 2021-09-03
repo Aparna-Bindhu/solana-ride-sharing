@@ -8,8 +8,12 @@ import { sendMoney } from "../../helpers/Wallet";import {
 import { Connection } from "@solana/web3.js";
 import { initWallet, WalletAdapter } from "../../helpers/Wallet";
 import "../css/payment.css"
+import { useHistory} from "react-router-dom";
+import { TransactionsView } from './Transaction';
 
 export const Sender =(props:any) => {
+  
+  const [afterSend,setAfterSend] = useState(false);
 
   const [transactions, setTransactions] =
   useState<Array<TransactionWithSignature>>();
@@ -55,6 +59,7 @@ const didSendMoney = () => {
     console.log('address:',props.location.state.Account);
     await sendMoney(props.location.state.Account, props.location.state.Amount);
     didSendMoney();
+    setAfterSend(true);
   };
 
   // fucntion showTheTrasactionDetails(){
@@ -76,6 +81,8 @@ const didSendMoney = () => {
     <Row>
       <Col xs="24" md={6}></Col>
       <Col xs="24" md={12}>
+        {!afterSend ?
+        <>
         <h2 id="verifyamounth2">Verify the Amount and complete your payment</h2>
       <Form
           name="normal_login"
@@ -104,6 +111,10 @@ const didSendMoney = () => {
             </Button>
           </Form.Item>
         </Form>
+        </> :
+        <TransactionsView transactions = {transactions} />
+        }
+
       </Col>
       <Col xs="24" md={6}></Col>
     </Row>

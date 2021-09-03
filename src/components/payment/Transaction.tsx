@@ -1,12 +1,13 @@
-import React, { FC } from "react";
+import React, { FC, useEffect, useState } from "react";
 import { TransactionWithSignature } from "../../helpers/Transaction";
-import "./TransactionView.css";
+// import "./TransactionView.css";
 
 interface TransactionsViewProps {
   transactions?: Array<TransactionWithSignature>;
 }
 
-const TransactionsView: FC<TransactionsViewProps> = ({ transactions }) => {
+export const TransactionsView: FC<TransactionsViewProps> = ({ transactions }) => {
+  
   const getTransactions = () => {
     return transactions?.map((trans) => {
       return <TransactionItemView key={trans.signature} transaction={trans} />;
@@ -19,7 +20,9 @@ const TransactionsView: FC<TransactionsViewProps> = ({ transactions }) => {
 interface TransactionItemViewProps {
   transaction: TransactionWithSignature;
 }
-export const TransactionItemView: FC<TransactionItemViewProps> = ({ transaction }) => {
+
+ const TransactionItemView: FC<TransactionItemViewProps> = ({ transaction }) => {
+
   const getTransactionItems = () => {
     const signature = transaction.signature?.toString();
     const meta = transaction.confirmedTransaction.meta;
@@ -29,11 +32,7 @@ export const TransactionItemView: FC<TransactionItemViewProps> = ({ transaction 
       amount = meta.preBalances[0] - meta.postBalances[0];
     }
     return (
-      <>
-        {/* <li key={signature + "signature"}>
-          <label>Tx:</label> &nbsp;
-          {signature}
-        </li> */}
+      <ul className="pledge_content_block">
         <li key={signature + "fee"}>
           <label>Fee:</label>&nbsp;
           {meta?.fee}
@@ -42,10 +41,6 @@ export const TransactionItemView: FC<TransactionItemViewProps> = ({ transaction 
           <label>Sent Amount:</label>&nbsp;
           {amount}
         </li>
-        {/* <li key={signature + "sender"}>
-          <label>Sender:</label>&nbsp;
-          {trans.instructions[0].keys[0].pubkey.toBase58()}
-        </li> */}
 
         <li key={signature + "receiver"}>
           <label>Receiver:</label>&nbsp;
@@ -55,11 +50,7 @@ export const TransactionItemView: FC<TransactionItemViewProps> = ({ transaction 
           <label>Sender Balance:</label>&nbsp;
           {meta?.postBalances[0]}
         </li>
-        {/* <li key={signature + "receiver-balance"}>
-          <label>Receiver Balance:</label>&nbsp;
-          {meta?.postBalances[1]}
-        </li> */}
-      </>
+      </ul>
     );
   };
 

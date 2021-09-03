@@ -30,6 +30,12 @@ h2{
     border-bottom: 1px solid rgb(2, 217, 255);
 }
 
+.unorderedliststyle .letsgo a{
+    font-weight: 1000;
+    font-size: 30px;
+    margin-left: 5%;
+}
+
 .pledge_block{
     background-color:rgb(255, 255, 255,0.2);
     box-shadow: -10px 15px 10px 0  rgba(14, 14, 14, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

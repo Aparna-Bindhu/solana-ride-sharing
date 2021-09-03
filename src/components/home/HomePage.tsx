@@ -22,8 +22,8 @@ export const HomePage = () => {
     <>
       <Row>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 5 }}>
-          <div className="logo-ride-share-img">
-            <img src={logo} />
+          <div >
+            <span className="letsgo">LetsGo</span>
           </div>
         </Col>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 14 }} className="home-main-col">
@@ -32,7 +32,7 @@ export const HomePage = () => {
               <div className="sub-app-content">
                 {!signUpLink ?
                   <>
-                    <span id="letsgo">LetsGo</span>
+                    <span className="letsgo">LetsGo</span>
                     <p><b>LetsGo</b> to get a ride or share a ride.
                       <br />If you are not registered yet, please click the below link.</p>
                     <Form.Item className="register-now-link">
@@ -41,8 +41,8 @@ export const HomePage = () => {
                   </>
                   :
                   <>
-                    <h1>Letsgo</h1>
-                    <p><b>Letsgo</b> to get a ride or share a ride.</p>
+                    <span className="letsgo">LetsGo</span>
+                    <p><b>LetsGo</b> to get a ride or share a ride.</p>
                     <Form.Item className="register-now-link">
                       Already registered? <a onClick={LoginLink}>Login!</a>
                     </Form.Item>

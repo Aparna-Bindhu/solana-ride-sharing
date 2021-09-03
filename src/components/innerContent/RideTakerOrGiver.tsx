@@ -11,15 +11,15 @@ import ridegiver from '../../img/ridegiver.svg';
 import { RideGiver } from './RideGiver';
 import { RideTaker } from './RideTaker';
 
-export const RideTakerOrGiver = (props:any) => {
+export const RideTakerOrGiver = (props: any) => {
 
   const [rideGiverOrTakerBlock, setRideGiverOrTakerBlock] = useState(false);
   const [rideTakerBlock, setRideTakerBlock] = useState(false);
   const [rideGiverBlock, setRideGiverBlock] = useState(false);
   const [iAgreeDisable, setIAgreeDisable] = useState(false);
 
-  const[giveBothPermission, setGiveBothPermission] = useState(props.location.state.username == 'admin@admin.com'?true:false);
-  const[riderGiverPermission, setRiderGiverPermission] = useState(props.location.state.username == 'ridegiver@admin.com'?true:false);
+  const [giveBothPermission, setGiveBothPermission] = useState(props.location.state.username == 'admin@admin.com' ? true : false);
+  const [riderGiverPermission, setRiderGiverPermission] = useState(props.location.state.username == 'ridegiver@admin.com' ? true : false);
 
   function showRideGiverOrTakerBlock() {
     setRideGiverOrTakerBlock(true);
@@ -40,17 +40,21 @@ export const RideTakerOrGiver = (props:any) => {
     setRideGiverBlock(true);
   }
 
+  function reloadSamePage() {
+    window.location.reload();
+  }
+
   return (
     <>
       <Row className="ridetakergiverbg">
         <Row>
           <Col xs={24} md={24}>
             <ul className="unorderedliststyle">
-              {(giveBothPermission || !riderGiverPermission)&&
-              <li><a href="/requestlist">Ride Giver Accept List</a></li>}
-              {(giveBothPermission || riderGiverPermission)&&
-              <li><a href="/acceptlist" >Ride Taker Request List</a></li>}
-              <li><a href="/acceptlist" >Transactions</a></li>
+              <li className="letsgo"><a onClick={reloadSamePage}>LetsGo</a></li>
+              {(giveBothPermission || !riderGiverPermission) &&
+                <li><a href="/requestlist">Ride Giver Accept List</a></li>}
+              {(giveBothPermission || riderGiverPermission) &&
+                <li><a href="/acceptlist" >Ride Taker Request List</a></li>}
             </ul>
           </Col>
         </Row>
