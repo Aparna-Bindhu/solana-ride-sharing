@@ -23,10 +23,10 @@ Due to some issues in storing data and retrieving it, we make use of static data
    * Both      : username: admin@admin.com      password: admin
 
 3. If you are a Ride Taker : click Ride Taker button, then you have input some information's like 
-                                                      * Whether you need a 4 wheeler or 2 wheeler.
-                                                      * Start and Drop location
-                                                      * Date and Time
-                                                      * No: of seats want to book (only for 4 wheeler).
+                                                      *Whether you need a 4 wheeler or 2 wheeler.
+                                                      *Start and Drop location
+                                                      *Date and Time
+                                                      *No: of seats want to book (only for 4 wheeler).
 
 4. If you are a Ride Giver : click Ride Giver button, then you have input some information's like
                                                       * Vehicle Name
