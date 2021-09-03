@@ -56,10 +56,10 @@ Due to some issues in storing data and retrieving it, we make use of static data
 6. If a ride taker click the 'I am a safe ride taker' button then list the ride givers around you with the same date, time and locations. you can request them for a ride by clicking the request button.
 
 
-7. The Ride Giver can see these request in the 'Ride Taker or Ride Giver selection page' nav-bar named 'Ride Taker Request List'. The Ride Giver can accept or decline the request's.
+7. The Ride Giver can see these request raised by Ride Taker in the 'Ride Taker or Ride Giver selection page' nav-bar named 'Ride Taker Request List'. The Ride Giver can accept or decline the request's.
 
 
-8. If the Ride Giver accept the request, the Ride Taker can see these accept detail's in the 'Ride Taker or Ride Giver selection page'  nav-bar named 'Ride Giver Accept List' with payment button. There are two conditions  
+8. If the Ride Giver accepts the request, the Ride Taker can see these accept detail's in the 'Ride Taker or Ride Giver selection page'  nav-bar named 'Ride Giver Accept List' with payment button. There are two conditions  
 
 
                                     * Until the ride giver accept your request the payment button get disabled.
@@ -67,4 +67,7 @@ Due to some issues in storing data and retrieving it, we make use of static data
                                     * The ride taker request is shown in the same page with disabled requested button.
                                     
 
-9. After completing the ride the payment can be done.
+9. After completing the ride, Ride Taker clicks the payment button. The payment is done by sending the agreed SOL/Lamports during ride confirmation.The amount is transferred from the Ride Taker wallet address to the Ride Giver wallet address, on clicking the send button in the payment page via Sollet Wallet. The transactions are approved in Solana network and the Ride Giver receives his ride money.
+
+**Note:** We can also later introduce a system wallet address for all confirmed rides as an intermediatery, which receives the ride charge in SOL prior to the ride during the ride acceptance by Ride Giver ie. on acceptance of ride giver to share ride. So after the completion of ride, the SOL is transferred to the Ride Giver from that system wallet. 
+So, if the Ride Taker fails to join the ride, a cancellation charge can be given to the other party and the remaining amount can be returned back to the Ride Taker.
