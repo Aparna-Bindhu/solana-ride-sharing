@@ -1,4 +1,5 @@
-Working of our project 'LetsGo'.
+Working of our project 'LetsGo'
+---------------------------------------------------
 
 Due to some issues in storing data and retrieving it, we make use of static data's.
 
