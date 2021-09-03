@@ -2,7 +2,9 @@ Working of our project 'LetsGo'.
 
 Due to some issues in storing data and retrieving it, we make use of static data's.
 
-1. Login Page
+1. Login Page:
+
+
    Login with credentials(username and password) link:  http://localhost:3000/
 
 2. Entering into Ride Taker or Ride Giver selection page. Before that you have agree a QUICK RIDER'S PLEDGE.
